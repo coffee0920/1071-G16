@@ -1,5 +1,5 @@
 #include"phonebook.h"
-void instructions( void )
+void instructions(void)
 {
     printf( "|-----------------------------------------------|\n"
             "|Phonebook Menu:                                |\n"
@@ -12,7 +12,7 @@ void instructions( void )
             "|-----------------------------------------------|\n");
 }
 
-void printList( ListNodePtr currentPtr )
+void printList(ListNodePtr currentPtr)
 {
     if ( currentPtr == NULL )
     {
