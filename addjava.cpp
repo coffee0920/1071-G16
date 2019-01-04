@@ -27,7 +27,6 @@ void input( M m[] )
         gets(m[i].gender);
         puts("Address:");
         gets( m[i].address );
-
     }
 }
 void sort_a( M m[] )
