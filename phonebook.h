@@ -11,3 +11,10 @@ struct ListNode
     ListNode *nextPtr;
 };
 
+typedef ListNode *ListNodePtr;
+
+void insert( ListNodePtr *sPtr, ListNode item );
+int del( ListNodePtr *sPtr, ListNode item );
+int isEmpty( ListNodePtr sPtr );
+void printList( ListNodePtr currentPtr );
+void instructions( void );
