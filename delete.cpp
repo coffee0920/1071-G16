@@ -4,8 +4,6 @@ int del( ListNodePtr *sPtr, ListNode item )
     ListNodePtr previousPtr;
     ListNodePtr currentPtr;
     ListNodePtr tempPtr;
-
-
     if ( item.id == ( *sPtr )->id )
     {
         tempPtr = *sPtr;
@@ -17,15 +15,11 @@ int del( ListNodePtr *sPtr, ListNode item )
     {
         previousPtr = *sPtr;
         currentPtr = ( *sPtr )->nextPtr;
-
-
         while ( currentPtr != NULL && currentPtr->id != item.id )
         {
             previousPtr = currentPtr;
             currentPtr = currentPtr->nextPtr;
         }
-
-
         if ( currentPtr != NULL )
         {
             tempPtr = currentPtr;
@@ -34,6 +28,10 @@ int del( ListNodePtr *sPtr, ListNode item )
             return item.id;
         }
     }
-
     return '\0';
+}
+
+int isEmpty( ListNodePtr sPtr )
+{
+    return sPtr == NULL;
 }
